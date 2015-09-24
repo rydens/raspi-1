@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+import blinky as bky
+
+bky.chase(5)
