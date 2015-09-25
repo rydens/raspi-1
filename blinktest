@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
 import blinky as bky
+import time as t
 
-bky.chase(5)
+bky.baf()
