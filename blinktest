@@ -2,4 +2,4 @@
 import blinky as bky
 import time as t
 
-bky.baf()
+
