@@ -4,8 +4,8 @@ import RPi.GPIO as GPIO
 import time as t
 import random as r
 
-pins  = [4,17,27,22,5,6,19,26]
-pins1 = [26,19,6,5,22,27,17,4] 
+pins  = [4,17,27,22,5,6,13,19]
+pins1 = [19,13,6,5,22,27,17,4] 
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pins,GPIO.OUT)
