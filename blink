@@ -2,26 +2,9 @@
 
 import RPi.GPIO as GPIO
 import time as t
+import blinky as b
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setup(4, GPIO.OUT)
-GPIO.setup(27, GPIO.OUT)
-GPIO.setup(5, GPIO.OUT)
-GPIO.setup(26, GPIO.OUT)
-while True:
-    GPIO.output(4, 1)
-    t.sleep(.1)
-    GPIO.output(27, 1)
-    t.sleep(.1)
-    GPIO.output(5, 1)
-    t.sleep(.1)
-    GPIO.output(26, 1)
-    t.sleep(.2)
-    GPIO.output(4, 0)
-    t.sleep(.1)
-    GPIO.output(27, 0)
-    t.sleep(.1)
-    GPIO.output(5, 0)
-    t.sleep(.1)
-    GPIO.output(26, 0)
-    t.sleep(.2)
+def test(w=1):
+  for n in range(w):
+    for pins in b.pins:
+
