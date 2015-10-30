@@ -6,8 +6,10 @@ import random as r
 
 pins  = [4,17,27,22,5,6,19,26]
 pins1 = [26,19,6,5,22,27,17,4] 
-others = [5,6,19,26]
-turtles = [22,27,17,4]
+brnchr = [5,6,19,26]
+brnchr1 = [26,19,6,5]
+brnchl = [22,27,17,4]
+brnchl1 = [4,17,27,22]
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pins,GPIO.OUT)
@@ -78,8 +80,14 @@ def random(rand=1):
 def branch(branch=1):
     for y in range(branch):
         for n in range(4):
-            on1(others[n])
-            on1(turtles[n])
-            t.sleep(.12)
-            off1(others[n])
-            off1(turtles[n])
+            on1(brnchr[n])
+            on1(brnchl[n])
+            t.sleep(.1)
+            off1(brnchr[n])
+            off1(brnchl[n])
+        for n in range(4):
+            on1(brnchr1[n])
+            on1(brnchl1[n])
+            t.sleep(.1)
+            off1(brnchr1[n])
+            off1(brnchl1[n])

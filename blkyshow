@@ -1,3 +1,22 @@
 #!/usr/bin/env python3
 
 import blinky as b
+import time as t
+
+b.on()
+t.sleep(1)
+b.off()
+t.sleep(1)
+b.slowon()
+t.sleep(1)
+b.slowoff()
+t.sleep(1)
+b.chase(2)
+t.sleep(1)
+b.baf(2)
+t.sleep(1)
+b.cylon(5)
+t.sleep(1)
+b.random(10)
+t.sleep(1)
+b.branch(2)
