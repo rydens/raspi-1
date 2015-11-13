@@ -1,5 +1,5 @@
 """My Library of Blinky Light Functions"""
-
+#This Library was created by Ryan Densmore.
 import RPi.GPIO as GPIO
 import time as t
 import random as r
