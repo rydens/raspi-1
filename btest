@@ -1,2 +1,9 @@
 #!/usr/bin/env python3
-import 
+import RPi.GPIO as GPIO
+import blinky as b
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(21,GPIO.IN)
+
+if GPIO.input(21):
+    b.cylon()
