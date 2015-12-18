@@ -91,7 +91,6 @@ def branch(branch=1):
             t.sleep(.1)
             off1(brnchr1[n])
             off1(brnchl1[n])
-<<<<<<< HEAD
 
 def all(all=1):
     on()
@@ -113,8 +112,12 @@ def all(all=1):
     branch(2)
     off()
 
-
 if __name__ == '__main__':
+    print('Welcome to the showcase of all my PiLights functions. Please silence your cell phones now')
+    print('and prepare for the show. If I had control over the lights, I would turn them off. So just')
+    print('imagine this room is dark, please. :)  Now, please direct your attention to the BreadBoard')
+    print('below. The show will begin shortly.')
+    t.sleep(6)
     on()
     t.sleep(1)
     off()
@@ -133,29 +136,3 @@ if __name__ == '__main__':
     t.sleep(1)
     branch(2)
     off()
-=======
-            
-if __name__ = '__main__':
-    print('Welcome to the showcase of all my PiLights functions. Please silence your cell phones now')
-    print('and prepare for the show. If I had control over the lights, I would turn them off. So just')
-    print('imagine this room is dark, please. :)  Now, please direct your attention to the BreadBoard')
-    print('below. The show will begin shortly.')
-    t.sleep(6)
-    b.on()
-    t.sleep(1)
-    b.off()
-    t.sleep(1)
-    b.slowon()
-    t.sleep(1)
-    b.slowoff()
-    t.sleep(1)
-    b.chase(2)
-    t.sleep(1)
-    b.baf(2)
-    t.sleep(1)
-    b.cylon(5)
-    t.sleep(1)
-    b.random(10)
-    t.sleep(1)
-    b.branch(2)
->>>>>>> 4bf319c530ebe026f307d3cddc4aa5d9491b0af2
