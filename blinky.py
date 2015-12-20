@@ -18,7 +18,6 @@ blue = [22]
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pins,GPIO.OUT)
 GPIO.setup(pins1,GPIO.OUT)
-GPIO.setup(blue,GPIO.OUT)
 def on():
     GPIO.output(pins,GPIO.HIGH)
 
@@ -116,26 +115,23 @@ def all(all=1):
     branch(2)
     off()
 
-def red(red=1):
-    for w in range(red):    
-        GPIO.output(red,1)
-        t.sleep(.2)
-        GPIO.output(red,0)
-        t.sleep(.2)
+r1 = [4,5]
+def red(red1=1):
+    for w in range(red1):    
+        GPIO.output(r1,1)
+        GPIO.output(r1,0)
 
-def yellow(yellow=1):
-    for w in range(yellow):
-        GPIO.output(yellow,1)
-        t.sleep(.2)
-        GPIO.output(yellow,0)
-        t.sleep(.2)
+y1 = [17,6]
+def yellow(yellow1=1):
+    for w in range(yellow1):
+        GPIO.output(y1,1)
+        GPIO.output(y1,0)
 
-def green(green=1):
-    for w in range(green):
-        GPIO.output(green,1)
-        t.sleep(.2)
-        GPIO.output(green,0)
-        t.sleep(.2)
+g1 = [27,19]
+def green(green1=1):
+    for w in range(green1):
+        GPIO.output(g1,1)
+        GPIO.output(g1,0)
 
 b1 = [22,26]
 def blue(blue1=1):

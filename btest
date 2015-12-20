@@ -9,4 +9,6 @@ GPIO.setup(21, GPIO.IN)
 
 while True:
     if GPIO.input(16) == False:
-        b.blue()
+        b.random()
+    if GPIO.input(21) == False:
+        b.chase()
