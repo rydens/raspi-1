@@ -5,8 +5,8 @@ import time as t
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(16, GPIO.IN)
+GPIO.setup(21, GPIO.IN)
 
 while True:
     if GPIO.input(16) == False:
-        b.cylon(1)
-    t.sleep(0.1)
+        b.blue()

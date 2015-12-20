@@ -10,11 +10,15 @@ brnchr = [5,6,19,26]
 brnchr1 = [26,19,6,5]
 brnchl = [22,27,17,4]
 brnchl1 = [4,17,27,22]
+red = [4,5]
+yellow = [17,6]
+green = [27,19]
+blue = [22]
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pins,GPIO.OUT)
 GPIO.setup(pins1,GPIO.OUT)
-
+GPIO.setup(blue,GPIO.OUT)
 def on():
     GPIO.output(pins,GPIO.HIGH)
 
@@ -111,6 +115,33 @@ def all(all=1):
     t.sleep(1)
     branch(2)
     off()
+
+def red(red=1):
+    for w in range(red):    
+        GPIO.output(red,1)
+        t.sleep(.2)
+        GPIO.output(red,0)
+        t.sleep(.2)
+
+def yellow(yellow=1):
+    for w in range(yellow):
+        GPIO.output(yellow,1)
+        t.sleep(.2)
+        GPIO.output(yellow,0)
+        t.sleep(.2)
+
+def green(green=1):
+    for w in range(green):
+        GPIO.output(green,1)
+        t.sleep(.2)
+        GPIO.output(green,0)
+        t.sleep(.2)
+
+b1 = [22,26]
+def blue(blue1=1):
+    for b in range(blue1):
+        GPIO.output(b1,1)
+        GPIO.output(b1,0)
 
 if __name__ == '__main__':
     print('Welcome to the showcase of all my PiLights functions. Please silence your cell phones now')
