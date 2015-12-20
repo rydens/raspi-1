@@ -1,8 +1,0 @@
-#!/usr/bin/env python3
-
-import blinky as b
-import time as t
-
-b.branch()
-t.sleep(2)
-b.off()
