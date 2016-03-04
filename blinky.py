@@ -1,5 +1,7 @@
-"""My Library of Blinky Light Functions"""
-#This Library was created by Ryan Densmore.
+# My Amazing PiLights Library
+# This Library was created by Ryan Densmore
+# BEST IN DA WORLD, MAN
+
 import RPi.GPIO as GPIO
 import time as t
 import random as r
@@ -18,26 +20,33 @@ blue = [22]
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(pins,GPIO.OUT)
 GPIO.setup(pins1,GPIO.OUT)
+
+# Turns all lights on
 def on():
     GPIO.output(pins,GPIO.HIGH)
 
+# Turns all lights off
 def off():
     GPIO.output(pins,GPIO.LOW)
 
+# Turns on the lights, optimized for slowon/off
 def on1(pin):
     GPIO.output(pin,GPIO.HIGH)
 
+# Turns off the lights, optimized for slowon/off
 def off1(pin):
     GPIO.output(pin,GPIO.LOW)
 
-def slowoff(list=pins,delay=.1): 
-    for pin in list:
-        off1(pin)
-        t.sleep(delay)
-
-def slowon(list=pins,delay=.1):
+# Turns on all lights slowly, one at a time
+def slowon(list=pins,delay=.1): 
     for pin in list:
         on1(pin)
+        t.sleep(delay)
+
+# Turns off all lights slowly, one at a time
+def slowoff(list=pins,delay=.1):
+    for pin in list:
+        off1(pin)
         t.sleep(delay)
 
 def chase(count=1):
